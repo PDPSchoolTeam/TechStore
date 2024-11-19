@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
+    <title>Accessories Store</title>
     <style>
         /* Umumiy sozlamalar */
         body {
@@ -13,79 +13,242 @@
             color: #333;
         }
 
-        /* Mahsulot konteyneri */
+        /* Header sozlamalari */
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+        }
+
+        .header-container h1 {
+            margin: 0;
+            font-size: 24px;
+            font-family: 'Arial Black', sans-serif;
+            margin-right: auto; /* H1ni chapga suradi */
+            padding-left: 10px; /* Tekstning o'ng chetidan joy qoldiradi */
+        }
+
+        .dropdown-btn {
+            margin-left: 10px; /* Katalog tugmachasini biroz chapga suradi */
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Dropdown menyu (o'ngdan chiqadigan) */
+        .dropdown-content {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: white;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            border-left: 1px solid #f1f1f1;
+            overflow-y: auto;
+            transition: right 0.3s ease;
+            z-index: 1000;
+        }
+
+        .dropdown-content.active {
+            right: 0;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f7f7f7;
+        }
+
+        /* Mahsulotlar uchun container */
         .product-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
             gap: 20px;
+            justify-content: center;
             padding: 20px;
         }
 
-        /* Har bir mahsulot kartasi */
         .product-card {
-            background-color: #fff;
+            width: 200px;
+            background-color: white;
+            padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 300px;
-            max-width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
-        /* Rasm */
         .product-card img {
             width: 100%;
             height: auto;
+            border-radius: 8px;
         }
 
-        /* Mahsulot nomi */
         .product-name {
             font-size: 18px;
+            margin-top: 10px;
             font-weight: bold;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #4CAF50;
             margin: 10px 0;
         }
 
-        /* Narx */
-        .product-price {
-            font-size: 16px;
-            color: #888;
-            margin-bottom: 10px;
-        }
-
-        /* Tugma */
         .buy-btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 10px;
             background-color: #4CAF50;
-            color: #fff;
+            color: white;
             text-decoration: none;
             border-radius: 4px;
-            margin-bottom: 10px;
+            font-size: 14px;
+            cursor: pointer;
         }
 
         .buy-btn:hover {
             background-color: #45a049;
         }
 
-        /* Responsiv dizayn */
+        /* Responsivlik uchun */
         @media (max-width: 600px) {
+            .header-container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .header-container h1 {
+                font-size: 20px;
+            }
+
+            .dropdown-btn {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+
             .product-card {
                 width: 100%;
+                max-width: 250px;
+            }
+        }
+        .header-container h1 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 100%;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 14px;
+            font-size: 14px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            transition: background-color 0.3s, border 0.3s, transform 0.2s;
+        }
+
+        .nav-links a:hover {
+            background-color: #45a049;
+            border: 1px solid #fff;
+            transform: scale(1.05);
+        }
+
+        /* Responsivlik uchun */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 18px;
+            }
+
+            .nav-links a {
+                padding: 6px 10px;
+                font-size: 12px;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
+    <div class="header-container">
+        <h1>Accessories Store</h1>
+        <div class="nav-links">
+            <a href="/categories/computers">Kompyuterlar</a>
+            <a href="/categories/laptops">Noutbuklar</a>
+            <a href="/categories/phones">Telefonlar</a>
+            <a href="/categories/tablets">Planshetlar</a>
+        </div>
+        <button class="dropdown-btn" onclick="toggleMenu(event)">Katalog</button>
+    </div>
+
+    <!-- Dropdown menyu -->
+    <div id="dropdownMenu" class="dropdown-content">
+        <a href="register">Ro'yxatdan o'tish</a>
+        <a href="login">Kirish</a>
+        <a href="/">Bosh sahifa</a>
+        <a href="profile">Profil</a>
+    </div>
+
+    <!-- Mahsulotlar -->
     <div class="product-container">
         {% for product in products %}
         <div class="product-card">
             <img src="{{ product.image.url }}" alt="{{ product.name }}">
             <div class="product-name">{{ product.name }}</div>
             <div class="product-price">${{ product.price }}</div>
-            <a href="#" class="buy-btn">Sotib olish</a>
+            <a href="{% url 'purchase' product.id %}" class="buy-btn">Sotib olish</a>
         </div>
+        {% empty %}
+        <p>No products available</p>
         {% endfor %}
     </div>
+
+    <script>
+        function toggleMenu(event) {
+            event.stopPropagation(); // Tugmani bosishda menyuni yopilishini oldini olish
+            const menu = document.getElementById('dropdownMenu');
+            menu.classList.toggle('active');
+
+            if (menu.classList.contains('active')) {
+                document.addEventListener('click', closeMenu);
+            } else {
+                document.removeEventListener('click', closeMenu);
+            }
+        }
+
+        function closeMenu(event) {
+            const menu = document.getElementById('dropdownMenu');
+            if (!menu.contains(event.target)) { // Agar menyudan tashqariga bosilsa
+                menu.classList.remove('active');
+                document.removeEventListener('click', closeMenu);
+            }
+        }
+    </script>
 </body>
 </html>

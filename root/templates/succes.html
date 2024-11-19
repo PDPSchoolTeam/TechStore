@@ -1,0 +1,78 @@
+<!-- success.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sotib olish muvaffaqiyatli amalga oshdi</title>
+    <style>
+        /* Animatsiya va dizayn uchun CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .container h2 {
+            color: green;
+        }
+
+        .container p {
+            color: #333;
+        }
+
+        .container a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sotib olish muvaffaqiyatli amalga oshdi!</h2>
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        <h3>{{ product.name }}</h3>
+        <p><strong>{{ product.price }} so'm</strong></p>
+        <p>Manzil: {{ address }}</p>
+        <p><a href="/">Bosh sahifaga qaytish</a></p>
+    </div>
+</body>
+</html>
