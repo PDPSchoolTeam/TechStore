@@ -69,5 +69,5 @@ def succes_view(request):
 def purchase(request, product_id):
     product = get_product(product_id)
     if request.method == "POST":
-        return render(request, 'succes.html')
+        return render(request, 'succes.html', {'product': product, 'address': 'Tashkent'})
     return render(request, 'purchase.html', {'product': product})
