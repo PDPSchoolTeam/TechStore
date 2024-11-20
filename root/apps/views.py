@@ -69,5 +69,9 @@ def succes_view(request):
 def purchase(request, product_id):
     product = get_product(product_id)
     if request.method == "POST":
-        return render(request, 'succes.html', {'product': product, 'address': 'Tashkent'})
+        return render(request, 'succes.html', {'product': product, 'Karta raqami': 'Yashiringan (xafsizlik uchun)'})
     return render(request, 'purchase.html', {'product': product})
+
+def profile_view(request):
+    username = request.user.username
+    return render(request, 'profile.html', {'username': username})
