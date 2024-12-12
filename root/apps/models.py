@@ -1,5 +1,6 @@
 from django.db import models
-
+from django.utils import timezone
+from django.conf import settings
 
 class Product(models.Model):
     CATEGORY_CHOICES = [

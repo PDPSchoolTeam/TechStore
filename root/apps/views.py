@@ -1,10 +1,3 @@
-# from django.shortcuts import render
-# from .models import Product
-#
-# def home(request):
-#     products = Product.objects.all()
-#     return render(request, 'home.html', {'products': products})
-
 from django.shortcuts import render, redirect
 from .models import User, Product
 from django.shortcuts import get_object_or_404
@@ -24,9 +17,8 @@ def register_view(request):
             if User.objects.filter(username=username).exists():
                 return render(request, 'register.html', {'error': 'Bu foydalanuvchi allaqachon mavjud.'})
 
-            # Yangi foydalanuvchini saqlash
             User.objects.create(username=username, password=password)
-            return redirect('/login/')  # Login sahifasiga yo'naltirish
+            return redirect('/login/')
 
     return render(request, 'register.html')
 
@@ -37,7 +29,7 @@ def login_view(request):
 
         user = User.objects.filter(username=username, password=password).first()
         if user:
-            return render(request, 'profile.html', {'username': username})  # Profilga yo‘naltirish
+            return render(request, 'profile.html', {'username': username})
         else:
             return render(request, 'login.html', {'error': 'Login yoki parol noto‘g‘ri.'})
 
@@ -56,9 +48,9 @@ def home_view(request):
 
 def product_list(request, category=None):
     if category == 'all' or category is None:
-        products = Product.objects.all()  # Barcha mahsulotlarni oladi
+        products = Product.objects.all()
     else:
-        products = Product.objects.filter(category=category)  # Tanlangan kategoriyaga mos mahsulotlar
+        products = Product.objects.filter(category=category)
 
     return render(request, 'home.html', {'products': products})
 
