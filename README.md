@@ -1,16 +1,25 @@
-# Salom, men [Saidxoja] 👋
+# Salom, bu **TechStore** loyihasi 👋
 
-![Profile Views](https://komarev.com/ghpvc/?username=your-github-username&color=blue)&nbsp;
-![Followers](https://img.shields.io/github/followers/your-github-username?style=social)&nbsp;
-![Stars](https://img.shields.io/github/stars/your-github-username?style=social)
+![Profile Views](https://komarev.com/ghpvc/?username=TechStore&color=blue)&nbsp;
+![Followers](https://img.shields.io/github/followers/TechStore?style=social)&nbsp;
+![Stars](https://img.shields.io/github/stars/TechStore?style=social)
 
 ---
 
-## 🌟 Mening Portfolio
-- 🚀 Hozirda: [Sohangizni yoki loyihangizni yozing]
-- 🎯 Maqsadlar: [Kelajakdagi rejalaringizni yozing]
-- 📖 O'rganayotgan: [Texnologiyalar yoki bilimlar]
-- 💡 Qiziqishlar: [Hobbilaringizni yozing]
+## 🌟 Loyiha haqida
+**TechStore** - bu zamonaviy aksessuarlar va gadjetlar uchun eng yaxshi platforma. Biz sizga quyidagi mahsulotlarni taqdim etamiz:
+- 📱 Telefonlar
+- 💻 Kompyuterlar
+- 📊 Planshetlar
+- 🎧 Aksessuarlar (quloqchinlar, zaryadlovchi qurilmalar va boshqalar)
+- 📷 Kameralar va boshqa gadjetlar
+
+---
+
+## 🚀 Hozirgi holat
+- 🔧 Loyiha hozirda ishlanmoqda va yangi xususiyatlar qo'shilmoqda.
+- 🎯 Maqsadimiz: mijozlar uchun qulay va innovatsion texnologik do'kon yaratish.
+- 💡 Foydalanuvchilar: gadjetlar va aksessuarlarni oson topishni istovchi har bir inson.
 
 ---
 
@@ -18,12 +27,16 @@
 
 ### Dasturlash tillari:
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 ### Frameworklar va Kutubxonalar:
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+
+### Ma'lumotlar bazalari:
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ### Asboblar:
 ![VS Code](https://img.shields.io/badge/VS%20Code-0078d7?style=for-the-badge&logo=visual-studio-code&logoColor=white)
@@ -32,16 +45,24 @@
 ---
 
 ## 📊 Statistika:
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=radical)&nbsp;
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username&layout=compact&theme=radical)
+![TechStore GitHub stats](https://github-readme-stats.vercel.app/api?username=TechStore&show_icons=true&theme=radical)&nbsp;
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TechStore&layout=compact&theme=radical)
 
 ---
 
-## 📫 Menga aloqada bo'ling:
-- 💌 Email: [your-email@example.com](mailto:your-email@example.com)
-- 🌐 Sayt: [your-website.com](https://your-website.com)
-- 🐦 Twitter: [@your-twitter](https://twitter.com/your-twitter)
+## 📦 Xususiyatlar
+- Mahsulotlarni kategoriyalarga bo'lish.
+- Foydalanuvchilarga qidiruv va filtr imkoniyatlari.
+- Xarid qilish savatining qulay interfeysi.
+- Mijozlar fikr-mulohazalarini ko'rish.
 
 ---
 
-⭐️ Agar mening ishlarim yoqsa, iltimos, repo'ga yulduzcha bering va kuzatishni unutmang! 😊
+## 📫 Biz bilan bog'laning:
+- 💌 Email: [techstore-support@example.com](mailto:techstore-support@example.com)
+- 🌐 Sayt: [techstore.com](https://techstore.com)
+- 🐦 Twitter: [@TechStore](https://twitter.com/TechStore)
+
+---
+
+⭐️ Agar loyiha sizga yoqsa, iltimos, repo'ga yulduzcha bering va kuzatishni unutmang! 😊
