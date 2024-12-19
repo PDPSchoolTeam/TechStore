@@ -42,14 +42,6 @@
 ![VS Code](https://img.shields.io/badge/VS%20Code-0078d7?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
----
-
-## 📊 Statistika:
-![TechStore GitHub stats](https://github-readme-stats.vercel.app/api?username=TechStore&show_icons=true&theme=radical)&nbsp;
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TechStore&layout=compact&theme=radical)
-
----
-
 ## 📦 Xususiyatlar
 - Mahsulotlarni kategoriyalarga bo'lish.
 - Foydalanuvchilarga qidiruv va filtr imkoniyatlari.
